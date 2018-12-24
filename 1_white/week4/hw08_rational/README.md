@@ -57,9 +57,6 @@ r.numerator = 6; // Нарушен инвариант несократимост
 
 **Гарантируется, что ни в одном из тестов, на которых будет тестироваться ваша реализация, не будет знаменателя, равного нулю.**
 
-Шаблон программы:
-
-[rational_interface.cpp](https://github.com/avtomato/Basics-of-C-plus-plus-development-white-belt/blob/master/week-04/08-Programming-Assignment/Source/rational_interface.cpp)
 
 ##### Часть 2 #####
 Реализуйте для класса *Rational* операторы ==, + и - так, чтобы операции с дробями можно было записывать естественным образом. Например, следующий код должен быть валидным:
@@ -69,9 +66,6 @@ if (r == Rational(7, 12)) {
   cout << "equal";
 }
 ```
-Шаблон программы:
-
-[rational_eq_add_sub.cpp](https://github.com/avtomato/Basics-of-C-plus-plus-development-white-belt/blob/master/week-04/08-Programming-Assignment/Source/rational_eq_add_sub.cpp)
 
 ##### Часть 3 #####
 Аналогично предыдущей части, реализуйте операторы * и /. Например, следующий код должен быть валидным:
@@ -83,10 +77,6 @@ if (r == Rational(2, 3)) {
 ```
 **Гарантируется, что ни в одном из тестов, на которых будет тестироваться ваша реализация, не будет выполняться деление на ноль.**
 
-Шаблон программы:
-
-[rational_mult_div.cpp](https://github.com/avtomato/Basics-of-C-plus-plus-development-white-belt/blob/master/week-04/08-Programming-Assignment/Source/rational_mult_div.cpp)
-
 ##### Часть 4 #####
 В этой части вам нужно реализовать операторы ввода и вывода для класса *Rational*. В результате у вас должен работать, например, такой код
 ```objectivec
@@ -94,9 +84,6 @@ Rational r;
 cin >> r;
 cout << r;
 ```
-Шаблон программы:
-
-[rational_io.cpp](https://github.com/avtomato/Basics-of-C-plus-plus-development-white-belt/blob/master/week-04/08-Programming-Assignment/Source/rational_io.cpp)
 
 ##### Часть 5 #####
 Наконец, вам нужно реализовать возможность использовать объекты класса *Rational* в качестве элементов контейнера *set* и ключей в контейнере *map*. Пример:
@@ -108,6 +95,3 @@ rationals.insert(Rational(1, 3));
 map<Rational, string> name;
 name[Rational(1, 2)] = "одна вторая";
 ```
-Шаблон программы:
-
-[rational_map.cpp](https://github.com/avtomato/Basics-of-C-plus-plus-development-white-belt/blob/master/week-04/08-Programming-Assignment/Source/rational_map.cpp)
